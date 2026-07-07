@@ -17,7 +17,10 @@ class ProcessInstructions extends BuildTask
 
     protected $description = 'Processes LLM instructions for automated content management.';
 
-    protected $enabled = true;
+    /**
+     * @config
+     */
+    private static $is_enabled = true;
 
     private static $segment = 'acm-process-instructions';
 

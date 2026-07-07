@@ -12,7 +12,10 @@ class TestLLM extends BuildTask
 
     protected $description = 'Connect to LLM and see if something comes back.';
 
-    protected $enabled = true;
+    /**
+     * @config
+     */
+    private static $is_enabled = true;
 
     private static $segment = 'acm-test-llm';
 
